@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motherc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="hidekey"
+    android:background="@color/g5">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filterrecy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/g3"
+        android:onClick="hidekey"
+        android:paddingTop="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hashtags_recy" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:onClick="hidekey"
+        android:orientation="horizontal"
+        android:background="@color/g5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/searchee"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginEnd="@dimen/_33sdp"
+                android:textCursorDrawable="@null"
+                android:textColor="#B6B6B6"
+                android:background="@drawable/srchview"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_17sdp"
+                android:paddingRight="@dimen/_13sdp"
+                android:textColorHint="#B6B6B6"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/back_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/back_icon"
+                app:layout_constraintTop_toTopOf="@+id/back_icon"
+                app:layout_constraintVertical_bias="0.7" />
+
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:tint="#B6B6B6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hashtags_recy"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_158sdp"
+        android:background="@color/g5"
+        android:minHeight="@dimen/_120sdp"
+        android:onClick="hidekey"
+        android:paddingLeft="@dimen/_6sdp"
+        android:paddingTop="@dimen/_9sdp"
+        android:paddingBottom="@dimen/_11ssp"
+        app:layout_constraintBottom_toTopOf="@+id/filterrecy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutf"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/prgrfil"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/filterrecy"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

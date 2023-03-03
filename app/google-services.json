@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "986711901545",
+    "project_id": "talab999-e093b",
+    "storage_bucket": "talab999-e093b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986711901545:android:0d84217fe0a5ed812fa9f8",
+        "android_client_info": {
+          "package_name": "com.example.talab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986711901545-dpskskm4d4hhboj31j58iiecvvatlp09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talab",
+            "certificate_hash": "b738ecec32387a8ee059c058efdeaece282187d9"
+          }
+        },
+        {
+          "client_id": "986711901545-lhk3qjlimb0o1hep2bnrccht3citndin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD62Kh-rUjis-twS5P02twJ6_4icEioVN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986711901545-lhk3qjlimb0o1hep2bnrccht3citndin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

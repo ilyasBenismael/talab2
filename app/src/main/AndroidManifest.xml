@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.talab">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.send"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.Receive"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".home.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode = "standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Post.Poster"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTask"/>
+
+        <activity android:name=".filter.Filter"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTop"/>
+
+        <activity android:name=".Post.PostPage2"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTop"/>
+
+        <activity android:name=".profils.complete"
+            android:screenOrientation="portrait"
+            android:launchMode = "standard"/>
+
+        <activity android:name=".home.Categorie"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTop"/>
+
+        <activity android:name=".chat.chat"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTop"/>
+
+        <activity android:name=".profils.SonCompte"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTask"
+            />
+
+        <activity android:name=".profils.ModifP"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleInstancePerTask"
+            />
+
+        <activity android:name=".Post.PostPage"
+            android:screenOrientation="portrait"
+            android:launchMode ="singleTop"/>
+
+        <activity android:name=".profils.ParamClass"
+            android:screenOrientation="portrait"
+            android:launchMode ="singleTop"/>
+
+        <activity android:name=".profils.Registring"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTop"/>
+
+        <activity android:name=".avii.avi"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTop"/>
+
+        <activity android:name=".profils.Signin"
+            android:screenOrientation="portrait"
+            android:launchMode = "standard"/>
+
+        <activity android:name=".profils.Compte"
+            android:screenOrientation="portrait"
+            android:launchMode = "standard"/>
+
+        <activity android:name=".Post.EditPost"
+            android:screenOrientation="portrait"
+            android:launchMode = "singleTask"/>
+
+
+    </application>
+
+</manifest>
